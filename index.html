@@ -1,0 +1,165 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.css" integrity="sha384-SkMvsJ0Np/CalM0X1hZCccQs6tnLq178/sGoPANiauambU0V/bloCaG3wOXfv+Ef" crossorigin="anonymous"/><style>body {
+  background-color: #211E3A;
+}
+#app {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+  display: block;
+  top: 25vh;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+#app header {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+#app header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+#app header .button.green {
+  background: #3bb662;
+  cursor: pointer;
+}
+#app header .button.yellow {
+  background: #e5c30f;
+  cursor: pointer;
+}
+#app header .button.red {
+  background: #e75448;
+}
+#app #terminal {
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
+  background: #30353a;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+  cursor: text;
+}
+#app #terminal span.input:focus-visible {
+  outline: none;
+}
+#app .contact {
+  list-style: none;
+  margin-left: -30px;
+}
+#app h4 {
+  text-align: center;
+}
+#app a {
+  text-align: center;
+  display: block;
+}
+#app .input {
+  outline-color: #30353a;
+  border: none;
+  display: inline-block;
+}
+#app .root {
+  color: #258ef0;
+}
+#app .tick {
+  color: #e7b946;
+}
+#app .blue {
+  color: lightblue;
+}
+#app .gray {
+  color: gray;
+}
+#app .dir {
+  color: #88DEF2;
+}
+#app .green {
+  color: green;
+}
+.command_input {
+  border: none;
+  background: #000634;
+  color: white;
+}
+.footer {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 0.1px;
+  color: white;
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+}
+.footer .site-code {
+  font-weight: bold;
+  color: lightblue;
+}
+.terminal-data {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .terminal-window {
+    width: 95%;
+    height: 60vh;
+    top: 10vh;
+  }
+  .footer {
+    bottom: 20px;
+  }
+}
+#file {
+  z-index: 1000;
+  position: relative;
+  height: 500px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+#file header {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+#file header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+#file header .button.green {
+  background: #3bb662;
+  cursor: pointer;
+}
+#file header .button.yellow {
+  background: #e5c30f;
+  cursor: pointer;
+}
+#file header .button.red {
+  background: #e75448;
+  cursor: pointer;
+}
+#file #md-container {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: 30px;
+  overflow: auto;
+}</style><title>Document</title><script defer="defer" src="index.js"></script></head><body><div id="app"><header><div class="button red"></div><div class="button yellow"></div><div class="button green"></div></header><div id="terminal"><p><span class="green">\[._.]/</span> - you're in blog cli! type `help` to get started.</p><p class="terminal-line"><span class="prompt"><span class="root">root</span> <span class="tick">❯</span> </span><span contenteditable="true" class="input" spellcheck="false"></span></p></div></div><div id="file"><header><div class="button red"></div><div class="button yellow"></div><div class="button green"></div></header><div id="md-container"></div></div></body></html>
